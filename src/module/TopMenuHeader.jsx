@@ -50,7 +50,7 @@ function TopMenuHeader() {
             <ul
               key={item.id}
               className={`text-white hidden lg:block ${
-                item.id === selected ? "text-gray-800 font-bold" : "text-white"
+                item.id === selected ? "text-black font-bold" : "text-white"
               }`}
             >
               <Link className="flex items-center" to={item.paths}>

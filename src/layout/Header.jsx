@@ -9,7 +9,7 @@ function Header() {
     <div>
       <div className="relative">
         <HeroSlider />
-        <div className="absolute top-0 right-0 left-0">
+        <div className="absolute z-50 top-0 right-0 left-0">
           <TopMenuHeader />
         </div>
       </div>

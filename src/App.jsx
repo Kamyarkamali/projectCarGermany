@@ -1,5 +1,12 @@
+// component - templates
+import HomePage from "./templates/HomePage";
+
 function App() {
-  return <></>;
+  return (
+    <div>
+      <HomePage />
+    </div>
+  );
 }
 
 export default App;

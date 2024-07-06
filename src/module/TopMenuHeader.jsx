@@ -11,6 +11,9 @@ import { headerMenu } from "../data/localData";
 
 //module
 import HamburgerMenu from "../module/HamburgerMenuComponent";
+import SearchBar from "../components/SearchBar";
+import TitleSlider from "../module/TitleSlider";
+import ButtonSlider from "./ButtonSlider";
 
 function TopMenuHeader() {
   // selected items-color=black
@@ -23,10 +26,10 @@ function TopMenuHeader() {
   };
 
   return (
-    <div className="max-w-[1402px] lg:h-[76px] xl:w-[1400px] lg:w-[1040px] lg:mt-0 md:w-[850px] h-[56px] md:mt-3  mx-auto bg-[#E00A0A] rounded-2xl lg:rounded-t-none sm:w-[630px] sm:mt-3 w-[370px] mt-3">
+    <div className="relative max-w-[1400px] 2xl:w-full xl:max-w-[1400px] lg:max-w-[1030px] lg:h-[76px] md:max-w-[900px] sm:max-w-[600px] lg:mt-0 h-[56px] md:mt-3 mx-auto bg-[#E00A0A] rounded-2xl lg:rounded-t-none sm:mt-3 mt-3">
       <div className="flex justify-between items-center">
         {/* hamburgerMenu-icon and component */}
-        <div className="flex items-center mt-2 justify-center w-[100px] relative md:hidden">
+        <div className="flex items-center mt-2 justify-center w-[100px] relative lg:hidden">
           <TbMenuDeep
             onClick={() => setOpenHamburgerMenu(true)}
             size={36}
@@ -44,7 +47,6 @@ function TopMenuHeader() {
             />
           </div>
         </div>
-
         <div className="mr-14 mt-6 flex items-center gap-11">
           {headerMenu.map((item) => (
             <ul
@@ -67,12 +69,25 @@ function TopMenuHeader() {
             </ul>
           ))}
         </div>
-
         {/* <div>center</div> */}
-
         <div className="lg:ml-14">
-          <img src={logo} alt="logo" className="lg:w-[171px] w-[134px] mt-3" />
+          <Link to={"/"}>
+            <img
+              src={logo}
+              alt="logo"
+              className="lg:w-[171px] w-[134px] mt-3"
+            />
+          </Link>
         </div>
+      </div>
+      <div className="flex justify-center">
+        <SearchBar />
+      </div>
+      <div>
+        <TitleSlider />
+      </div>
+      <div>
+        <ButtonSlider />
       </div>
     </div>
   );

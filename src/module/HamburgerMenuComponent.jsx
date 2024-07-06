@@ -12,7 +12,7 @@ function HamburgerMenuComponent({ openHamburgerMenu, setOpenHamburgerMenu }) {
         <MdOutlineClose
           onClick={() => setOpenHamburgerMenu(false)}
           size={40}
-          className="mt-5 ml-3 cursor-pointer"
+          className="mt-9 ml-3 cursor-pointer"
         />
       </div>
 

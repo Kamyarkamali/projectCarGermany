@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 function Footer() {
   return (
     <div className="max-w-[1417px] h-[291px] bg-[#E00A0A] rounded-t-2xl">
-      <div className="border-b-[6px] flex items-center justify-evenly max-w-[1417px] h-[78px]">
+      <div className="border-b-[6px] flex flex-col md:flex-row items-center justify-evenly max-w-[1417px] h-[78px]">
         {/* sochial medi icons */}
         <div className="text-white flex justify-between items-center w-[300px]">
           <div className="cursor-pointer">

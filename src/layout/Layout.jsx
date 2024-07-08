@@ -17,7 +17,7 @@ function Layout({ children }) {
         className={`${
           location.pathname === "/articles"
             ? "xl:h-[1100px] md:h-[1500px] lg:h-[1100px] h-[2800px]"
-            : "min-h-[2800px]"
+            : "h-fit"
         }`}
       >
         {children}

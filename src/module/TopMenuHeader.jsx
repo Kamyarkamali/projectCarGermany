@@ -16,7 +16,7 @@ import TitleSlider from "../module/TitleSlider";
 import ButtonSlider from "./ButtonSlider";
 
 function TopMenuHeader() {
-  const locatinArticle = useLocation();
+  const location = useLocation();
 
   // selected items-color=black
   const [selected, setSelected] = useState(headerMenu[0].id);
@@ -71,7 +71,6 @@ function TopMenuHeader() {
             </ul>
           ))}
         </div>
-        {/* <div>center</div> */}
         <div className="lg:ml-14">
           <Link to={"/"}>
             <img
@@ -83,26 +82,19 @@ function TopMenuHeader() {
         </div>
       </div>
 
-      {locatinArticle.pathname !== "/articles" ||
-        (locatinArticle.pathname === "/name" && (
+      {location.pathname === "/" && (
+        <>
           <div className="flex justify-center">
             <SearchBar />
           </div>
-        ))}
-
-      {locatinArticle.pathname !== "/articles" ||
-        (locatinArticle.pathname === "/name" && (
           <div>
             <TitleSlider />
           </div>
-        ))}
-
-      {locatinArticle.pathname !== "/articles" ||
-        (locatinArticle.pathname === "/name" && (
           <div>
             <ButtonSlider />
           </div>
-        ))}
+        </>
+      )}
     </div>
   );
 }

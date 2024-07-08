@@ -10,6 +10,9 @@ import Articles1 from "../components/Articles1";
 import CoNsultationRequest from "../components/CoNsultationRequest";
 import Buttonup from "../element/Buttonup";
 import CallButton from "../element/CallButton";
+import Articles2 from "../components/Articles2";
+import Articles3 from "../components/Articles3";
+import NewArticelse from "../module/NewArticelse";
 
 function HomePage() {
   useEffect(() => {
@@ -26,6 +29,9 @@ function HomePage() {
         <LogoCars />
         <Articles1 />
         <CoNsultationRequest />
+        <Articles2 />
+        <Articles3 />
+        <NewArticelse />
       </div>
       <div className="fixed bottom-3 left-4 z-50">
         <Buttonup />

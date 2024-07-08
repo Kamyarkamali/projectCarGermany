@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import logo from "../assets/images/logo.png";
 
@@ -16,6 +16,8 @@ import TitleSlider from "../module/TitleSlider";
 import ButtonSlider from "./ButtonSlider";
 
 function TopMenuHeader() {
+  const locatinArticle = useLocation();
+
   // selected items-color=black
   const [selected, setSelected] = useState(headerMenu[0].id);
 
@@ -80,15 +82,27 @@ function TopMenuHeader() {
           </Link>
         </div>
       </div>
-      <div className="flex justify-center">
-        <SearchBar />
-      </div>
-      <div>
-        <TitleSlider />
-      </div>
-      <div>
-        <ButtonSlider />
-      </div>
+
+      {locatinArticle.pathname !== "/articles" ||
+        (locatinArticle.pathname === "/name" && (
+          <div className="flex justify-center">
+            <SearchBar />
+          </div>
+        ))}
+
+      {locatinArticle.pathname !== "/articles" ||
+        (locatinArticle.pathname === "/name" && (
+          <div>
+            <TitleSlider />
+          </div>
+        ))}
+
+      {locatinArticle.pathname !== "/articles" ||
+        (locatinArticle.pathname === "/name" && (
+          <div>
+            <ButtonSlider />
+          </div>
+        ))}
     </div>
   );
 }

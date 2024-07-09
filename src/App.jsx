@@ -5,6 +5,7 @@ import AllArticlesPage from "./templates/AllArticlesPage";
 import ArticelseDetailse from "./templates/ArticelseDetailse";
 import ScrollToTop from "./components/ScrollTop";
 import Contact from "./module/Contact";
+import About from "./module/About";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/articles" element={<AllArticlesPage />} />
         <Route path="/:name" element={<ArticelseDetailse />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );

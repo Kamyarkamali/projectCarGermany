@@ -1,11 +1,11 @@
 import React from "react";
-
 import Footer from "../layout/Footer";
 import Header from "./Header";
 import { useLocation } from "react-router-dom";
 
 function Layout({ children }) {
   const location = useLocation();
+  const isArticleDetailPage = /^\/[^/]+$/.test(location.pathname);
 
   return (
     <div>
@@ -23,7 +23,15 @@ function Layout({ children }) {
         {children}
       </main>
 
-      <footer>
+      <footer
+        className={`${
+          location.pathname === "/articles"
+            ? "mt-[1rem]"
+            : isArticleDetailPage
+            ? "mt-[1rem]"
+            : "h-fit md:mt-0"
+        }`}
+      >
         <Footer />
       </footer>
     </div>

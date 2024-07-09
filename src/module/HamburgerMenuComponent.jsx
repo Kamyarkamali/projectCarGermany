@@ -19,7 +19,7 @@ function HamburgerMenuComponent({ openHamburgerMenu, setOpenHamburgerMenu }) {
       <div>
         <ul className="mt-3">
           {headerMenu.map((item) => (
-            <Link key={item.id}>
+            <Link to={item.paths} key={item.id}>
               <li
                 onClick={() => setOpenHamburgerMenu(false)}
                 className="mr-4 mb-7 text-[18px]"

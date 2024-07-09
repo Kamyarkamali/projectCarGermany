@@ -30,7 +30,7 @@ function ArticelseDetailse() {
 
   return (
     <div className="flex flex-col justify-center h-[1330px]">
-      <div className="border-[3px] border-red-600 lg:p-12 p-7 rounded-3xl lg:w-[1400px] md:h-[10px] h-fit mt-[6rem] md:mt-0 w-[340px] mx-auto">
+      <div className="border-[3px] border-red-600 lg:p-12 p-7 rounded-3xl lg:w-[1400px] md:h-[10px] h-fit mt-[11rem] md:mt-0 w-[340px] mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8 text-sm">
           <Link to={"/"}>
             <p className="flex gap-1 items-center">
@@ -47,9 +47,9 @@ function ArticelseDetailse() {
         </div>
       </div>
 
-      <div className="mt-[2rem] flex flex-col items-start mr-9 gap-4">
-        <p className="text-3xl font-bold text-red-600">{name}</p>
-        <div className="flex flex-col md:flex-row w-[300px] md:w-[600px] text-sm gap-3 items-center">
+      <div className="mt-[2rem] flex flex-col md:items-start items-center mr-9 gap-4">
+        <p className="md:text-3xl text-sm font-bold text-red-600">{name}</p>
+        <div className="flex flex-col md:flex-row w-[300px] text-gray-700 md:w-[600px] text-sm gap-3 items-center">
           <img src={profile} alt="/" className="w-[20px]" />
           <p>نویسنده:</p>
           <p>نام دلخواه نوشته شود</p>
@@ -69,11 +69,11 @@ function ArticelseDetailse() {
                 <img
                   src={item.imgae}
                   alt="/"
-                  className={`lg:w-[800px] w-[453px] lg:h-[500px]`}
+                  className={`lg:w-[800px] w-[403px] rounded-md lg:h-[500px]`}
                 />
               </div>
             ))}
-            <div className="border-2 flex flex-col justify-between mt-4 lg:w-[800px] w-[340px] p-7 bg-[#E00A0A] rounded-2xl">
+            <div className="border-2 flex flex-col justify-between mt-4 lg:w-[800px] w-[340px] md:p-7 p-3 bg-[#E00A0A] rounded-2xl">
               <div className="flex justify-between">
                 <h1 className="text-white font-bold">فهرست مطالب</h1>
                 <MdKeyboardArrowDown
@@ -94,7 +94,10 @@ function ArticelseDetailse() {
             <div className="mt-4 mr-2 text-[#7A7C7E]">
               <h1>زمان مطالعه:1دقیقه</h1>
               {fainalData?.map((item) => (
-                <div key={item.id} className="flex flex-col gap-4 text-[16px]">
+                <div
+                  key={item.id}
+                  className="flex flex-col gap-4 md:text-[16px] text-[13px]"
+                >
                   <p className="ml-4 leading-7">{item?.li}</p>
                   <p>{item?.li2}</p>
                   <p>{item?.li3}</p>

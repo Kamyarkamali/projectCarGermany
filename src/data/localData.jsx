@@ -23,6 +23,19 @@ import articlse7 from "../assets/articles/11.webp";
 import articlse8 from "../assets/articles/12.webp";
 import articlse9 from "../assets/articles/13.webp";
 
+import cars1 from "../assets/galleryCar/1.webp";
+import cars2 from "../assets/galleryCar/2.webp";
+import cars3 from "../assets/galleryCar/3.webp";
+import cars4 from "../assets/galleryCar/4.webp";
+import cars5 from "../assets/galleryCar/5.webp";
+import cars6 from "../assets/galleryCar/6.webp";
+import cars7 from "../assets/galleryCar/7.webp";
+import cars8 from "../assets/galleryCar/8.webp";
+import cars9 from "../assets/galleryCar/9.webp";
+import cars10 from "../assets/galleryCar/10.webp";
+import cars11 from "../assets/galleryCar/11.webp";
+import cars12 from "../assets/galleryCar/12.webp";
+
 export const headerMenu = [
   { id: 1, title: "صفحه اصلی", paths: "/" },
   { id: 2, title: "خدمات", paths: "/", icon: <IoMdArrowDropdown /> },
@@ -187,4 +200,19 @@ export const articlesData = [
     li5: "پوشش اولیه بدنه ماشین وقتی در معرض آب و هوا ، باران های اسیدی ، قطرات باران ، غضولات پرندگان و غیره قرار می گیرند، به مرور زمان دوام آن کاهش پیدا می کند. اما سرامیک خودرو به شرط رعایت اصول و مواد مرغوب دارای دوام بیشتری است و میتواند سال ها از بدنه ماشین محفاظت کند",
     li6: "اگر سرامیک خودرو بدست افراد باتجربه صورت نگیرد ممکن است بدتر از رنگ اصلی ماشین شود.",
   },
+];
+
+export const galleryCarts = [
+  { id: 1, image: cars1 },
+  { id: 2, image: cars2 },
+  { id: 3, image: cars3 },
+  { id: 4, image: cars4 },
+  { id: 5, image: cars5 },
+  { id: 6, image: cars6 },
+  { id: 7, image: cars7 },
+  { id: 8, image: cars8 },
+  { id: 9, image: cars9 },
+  { id: 10, image: cars10 },
+  { id: 11, image: cars11 },
+  { id: 12, image: cars12 },
 ];

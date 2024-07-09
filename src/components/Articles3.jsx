@@ -7,10 +7,10 @@ function Articles3() {
   return (
     <div className="max-w-[1400px] mx-auto mt-[7rem]">
       {/* image articles1 */}
-      <div className="flex lg:flex-row flex-col items-center justify-center mt-9 gap-5">
+      <div className="flex items-center justify-center mt-9 gap-5">
         <div className="relative w-[360px] md:w-[658px]">
           <img
-            className="w-[658px] rounded-2xl h-[220px] object-cover "
+            className="md:w-[658px] rounded-2xl md:h-[250px] object-cover "
             src={image9}
             alt="/"
           />
@@ -18,12 +18,14 @@ function Articles3() {
             .
           </div>
           <div className="absolute text-white top-[7rem] right-[3rem] text-3xl font-bold">
-            <span>سیستم تعلیق</span>
+            <span className="absolute top-[-70px] md:top-[10px] right-[-2rem] md:text-2xl text-[17px] w-[200px]">
+              سیستم تعلیق
+            </span>
           </div>
         </div>
         <div className="relative w-[360px] md:w-[658px]">
           <img
-            className="w-[658px] rounded-2xl h-[220px] object-cover"
+            className="md:w-[658px] rounded-2xl md:h-[250px] object-cover "
             src={image10}
             alt="/"
           />
@@ -31,7 +33,9 @@ function Articles3() {
             .
           </div>
           <div className="absolute text-white top-[7rem] right-[3rem] text-3xl font-bold">
-            <span>ایرکاندیشن</span>
+            <span className="absolute top-[-70px] md:top-[10px] right-[-2rem] md:text-2xl text-[17px] w-[200px]">
+              ایرکاندیشن
+            </span>
           </div>
         </div>
       </div>

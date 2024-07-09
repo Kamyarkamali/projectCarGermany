@@ -56,7 +56,7 @@ function Footer() {
 
       <div className="flex flex-col lg:flex-row justify-evenly items-center p-5">
         <div className="flex flex-col lg:flex-row items-center lg:gap-[8rem] gap-[4rem]">
-          <div className="text-[12px] font-bold flex flex-col gap-4 items-start text-white">
+          <div className="text-[12px] font-bold flex flex-col gap-4 lg:items-start items-center text-white">
             <span>دسترسی اسان</span>
             <span>وبلاگ</span>
             <span>خدمات ما</span>
@@ -64,7 +64,7 @@ function Footer() {
             <span>مسیریابی</span>
           </div>
 
-          <div className="text-[12px] font-bold flex flex-col gap-4 items-start text-white">
+          <div className="text-[12px] font-bold flex flex-col items-center gap-4 lg:items-start text-white">
             <span>تعمیرات تخصصی</span>
             <span>BENZ</span>
             <span>BMW</span>
@@ -72,7 +72,7 @@ function Footer() {
             <span>Porsche</span>
           </div>
 
-          <div className="text-[12px] font-bold flex flex-col gap-4 lg:items-start items-center text-white">
+          <div className="text-[12px] mb-2 font-bold flex flex-col gap-4 lg:items-start items-center text-white">
             <span>ارتباط با ما:</span>
             <span>نام مورد نظر</span>
             <span>شماره تماس نوشته شود</span>
@@ -80,14 +80,24 @@ function Footer() {
         </div>
 
         <div>
-          <img src={logo} alt="" />
-          <div className="text-white flex flex-col  items-center mt-3">
+          <img className="w-[280px]" src={logo} alt="/" />
+          <div className="text-white flex flex-col gap-3 md:gap-0 items-center mt-3">
             <p>تعمیرگاه تخصصی اتوموبیل های آلمانی</p>
-            <a href="mailto:ایمیل نوشته شود"> ایمیل نوشته شود </a>
-            <div className="flex  items-center gap-2">
-              <IoLogoInstagram />
-              <FaTelegramPlane />
-              <FaWhatsapp />
+            <a className="mt-1" href="mailto:ایمیل نوشته شود">
+              {" "}
+              ایمیل نوشته شود{" "}
+            </a>
+            <div className="flex  items-center gap-8 mt-5">
+              <a href="#" target="_blank">
+                <IoLogoInstagram size={18} className="cursor-pointer" />
+              </a>
+
+              <a href="#">
+                <FaTelegramPlane size={18} className="cursor-pointer" />
+              </a>
+              <a href="#" target="_blank">
+                <FaWhatsapp size={18} className="cursor-pointer" />
+              </a>
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@ import ArticelseDetailse from "./templates/ArticelseDetailse";
 import ScrollToTop from "./components/ScrollTop";
 import Contact from "./module/Contact";
 import About from "./module/About";
+import Location from "./templates/Location";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/articles" element={<AllArticlesPage />} />
         <Route path="/:name" element={<ArticelseDetailse />} />
         <Route path="/about" element={<About />} />
+        <Route path="/location" element={<Location />} />
       </Routes>
     </div>
   );

@@ -1,15 +1,8 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-
 import logo from "../assets/images/logo.png";
-
-//icon
 import { TbMenuDeep } from "react-icons/tb";
-
-//localdataMenu/foldter-data
 import { headerMenu } from "../data/localData";
-
-//module
 import HamburgerMenu from "../module/HamburgerMenuComponent";
 import SearchBar from "../components/SearchBar";
 import TitleSlider from "../module/TitleSlider";
@@ -18,12 +11,10 @@ import ButtonSlider from "./ButtonSlider";
 function TopMenuHeader() {
   const location = useLocation();
 
-  // selected items-color=black
   const [selected, setSelected] = useState(headerMenu[0].id);
-
   const [openHamburgerMenu, setOpenHamburgerMenu] = useState(false);
 
-  const clickHandeler = (id) => {
+  const clickHandler = (id) => {
     setSelected(id);
   };
 
@@ -51,22 +42,19 @@ function TopMenuHeader() {
         </div>
         <div className="mr-14 mt-6 flex items-center gap-11">
           {headerMenu.map((item) => (
-            <ul
-              key={item.id}
-              className={`text-white hidden lg:block ${
-                item.id === selected ? "text-black font-bold" : "text-white"
-              }`}
-            >
+            <ul key={item.id} className="text-white hidden lg:block">
               <Link className="flex items-center" to={item.paths}>
                 <li
-                  onClick={() => clickHandeler(item.id)}
-                  className="text-[16px]"
+                  onClick={() => clickHandler(item.id)}
+                  className={`text-[16px] cursor-pointer ${
+                    item.id === selected ? "text-black font-bold" : "text-white"
+                  }`}
                 >
                   {item.title}
                 </li>
-                <li className="text-[23px] cursor-pointer">
-                  {item.title === "خدمات" ? item.icon : null}
-                </li>
+                {item.title === "خدمات" && (
+                  <li className="text-[23px] cursor-pointer">{item.icon}</li>
+                )}
               </Link>
             </ul>
           ))}

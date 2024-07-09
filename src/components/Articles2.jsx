@@ -7,10 +7,10 @@ function Articles2() {
   return (
     <div className="max-w-[1400px] mx-auto mt-[7rem]">
       {/* image articles1 */}
-      <div className="flex lg:flex-row flex-col items-center justify-center mt-9 gap-5">
+      <div className="flex items-center justify-center mt-9 gap-5">
         <div className="relative w-[360px] md:w-[658px]">
           <img
-            className="w-[658px] rounded-2xl h-[250px] object-cover "
+            className="md:w-[658px] rounded-2xl md:h-[250px] object-cover "
             src={image3}
             alt="/"
           />
@@ -18,12 +18,14 @@ function Articles2() {
             .
           </div>
           <div className="absolute text-white top-[7rem] right-[3rem] text-3xl font-bold">
-            <span>گیربکس خودرو</span>
+            <span className="absolute top-[-70px] md:top-[10px] right-[-2rem] md:text-2xl text-xl w-[200px]">
+              گیربکس خودرو
+            </span>
           </div>
         </div>
         <div className="relative w-[360px] md:w-[658px]">
           <img
-            className="w-[658px] rounded-2xl h-[250px] object-cover"
+            className="md:w-[658px] rounded-2xl md:h-[250px] object-cover"
             src={image4}
             alt="/"
           />
@@ -31,7 +33,9 @@ function Articles2() {
             .
           </div>
           <div className="absolute text-white top-[7rem] right-[3rem] text-3xl font-bold">
-            <span>برق خودرو</span>
+            <span className="absolute top-[-70px] md:top-[10px] right-[-2rem] md:text-2xl text-xl w-[200px]">
+              برق خودرو
+            </span>
           </div>
         </div>
       </div>

@@ -59,8 +59,7 @@ export const headerMenu = [
   {
     id: 6,
     title: "مسیریابی",
-    paths: "/about",
-    paths: "/google",
+    paths: "/location",
   },
 ];
 

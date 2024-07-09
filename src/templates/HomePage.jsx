@@ -14,6 +14,7 @@ import Articles2 from "../components/Articles2";
 import Articles3 from "../components/Articles3";
 import NewArticelse from "../module/NewArticelse";
 import SlidercarsLabale from "../module/SlidercarsLabale";
+import NewsComponent from "../module/NewsComponent";
 
 function HomePage() {
   useEffect(() => {
@@ -34,6 +35,7 @@ function HomePage() {
         <Articles3 />
         <NewArticelse />
         <SlidercarsLabale />
+        <NewsComponent />
       </div>
       <div className="fixed bottom-3 left-4 z-50">
         <Buttonup />

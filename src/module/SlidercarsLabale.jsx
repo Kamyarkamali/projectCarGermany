@@ -26,7 +26,7 @@ export default function App() {
         autoplay={{ delay: 3000 }}
         breakpoints={{
           0: {
-            slidesPerView: 1,
+            slidesPerView: 2,
           },
           400: {
             slidesPerView: 2,

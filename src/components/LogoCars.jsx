@@ -10,7 +10,7 @@ function LogoCars() {
           key={image.id}
           src={image.image}
           alt="logoCars"
-          className="md:w-[157px] w-[95px]"
+          className="md:w-[157px] w-[90px]"
         />
       ))}
     </div>

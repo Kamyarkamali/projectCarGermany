@@ -33,7 +33,7 @@ function Articles2() {
 
       {/*description */}
       <div className="md:mt-[3rem] mt-[1rem] md:mr-8 mr-2 flex flex-col md:items-start items-center">
-        <p className="mt-[1rem] text-[#7D7D7D] text-right leading-7">
+        <p className="mt-[1rem] text-[#7D7D7D] md:text-right text-center ml-3 leading-7">
           خدمات خودرو و تعمیر خودروهای خارجی از جمله مهم‌ترین نیازهای هر فردی
           است که به خودروی خود اهمیت می‌دهد. در تعمیرگاه تخصصی خودروهای خارجی،
           تیمی از کارشناسان مجرب با استفاده از تجهیزات پیشرفته، خدماتی از قبیل

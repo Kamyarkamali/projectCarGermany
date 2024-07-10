@@ -19,7 +19,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 
 export default function App() {
   return (
-    <div className="mt-[4rem] max-w-[1000px] mx-auto flex mb-[3rem] p-4">
+    <div className="mt-[4rem] max-w-[900px] mx-auto flex mb-[3rem] p-4">
       <Swiper
         spaceBetween={50}
         slidesPerView={3}

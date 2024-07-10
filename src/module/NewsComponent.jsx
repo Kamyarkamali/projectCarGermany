@@ -20,7 +20,7 @@ function NewsComponent() {
           <h3 className="md:text-[32px] text-center md:text-start text-white font-bold">
             عضویت در خبرنامه
           </h3>
-          <p className="md:text-[16px] mb-8 text-white">
+          <p className="md:text-[16px] mb-8 text-white text-center md:text-start">
             برای عضویت در خبرنامه و اطلاع از تخفیف ها و کمپین ها شماره خود را
             وارد نمایید.
           </p>
@@ -43,7 +43,7 @@ function NewsComponent() {
           </button>
         </div>
       </div>
-      <p className="text-[#828D8B] leading-9 mb-9 md:w-[1300px] md:mr-9 w-[380px] mr-4">
+      <p className="text-[#828D8B] leading-9 mb-9 ml-4   max-w-[1230px] md:mr-9 sm:text-start text-center mr-4">
         تعمیرگاه تخصصی خودروهای لوکس RDK Otomotive با بیش از ۱۰ سال سابقه درخشان
         در زمینه تعمیر و نگهداری خودروهای لوکس، بهترین خدمات را به مشتریان خود
         ارائه می‌دهد. این تعمیرگاه با استفاده از تجهیزات پیشرفته و تیمی از
@@ -53,7 +53,7 @@ function NewsComponent() {
         الکترونیکی، تعمیرات سیستم‌های ترمز و … را نیز به مشتریان خود ارائه
         می‌دهد.
       </p>
-      <p className="mb-9 mr-9 text-[#828D8B] w-[300px] md:w-[1200px] leading-7">
+      <p className="mb-9 mr-9 text-[#828D8B] max-w-[1390px] leading-7 text-center lg:text-start ml-6">
         برای اطلاعات بیشتر و یا رزرو وقت با تعمیرگاه تخصصی خودروهای لوکس RDK
         Otomotive تماس بگیرید.
       </p>

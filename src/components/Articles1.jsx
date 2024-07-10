@@ -39,18 +39,18 @@ function Articles1() {
 
       {/*description */}
       <div className="mt-[3rem] md:mr-8 mr-2 flex flex-col md:items-start items-center">
-        <h2 className="text-[#999999] font-bold">
+        <h2 className="text-[#999999] font-bold text-center md:text-start">
           پشتیبانی و پاسخگویی ۲۴ ساعته و تمام وقت تعمیرگاه تخصصی خودروهای لوکس
           RDK Otomotive
         </h2>
-        <p className="mt-[1rem] text-[#7D7D7D] text-right leading-7">
+        <p className="mt-[1rem] text-[#7D7D7D] md:text-right text-center leading-7 ml-3 lg:ml-0">
           تیم پشتیبانی و پاسخگویی تعمیرگاه تخصصی خودروهای لوکس RDK Otomotive، در
           تمامی ساعات شبانه‌روز و در تمامی روزهای هفته، آماده پاسخگویی به سوالات
           و نیازهای مشتریان محترم می‌باشد. این تیم با داشتن دانش فنی و تجربه
           کافی، به مشتریان خود در زمینه‌هایی از قبیل تعمیرات و خدمات خودرو،
           مشاوره و راهنمایی، پشتیبانی فنی و … کمک می‌کند
         </p>
-        <p className="mt-[1rem] text-[#7D7D7D] leading-8">
+        <p className="mt-[1rem] text-[#7D7D7D] leading-8 text-center md:text-right ml-3 lg:ml-0">
           برای اطلاعات بیشتر و یا رزرو وقت با تعمیرگاه تخصصی خودروهای لوکس RDK
           Otomotive از طریق فرم زیر و یا شماره های تماس ما با ما در ارتباط
           باشید.

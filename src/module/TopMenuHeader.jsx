@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import { TbMenuDeep } from "react-icons/tb";
@@ -7,12 +7,16 @@ import HamburgerMenu from "../module/HamburgerMenuComponent";
 import SearchBar from "../components/SearchBar";
 import TitleSlider from "../module/TitleSlider";
 import ButtonSlider from "./ButtonSlider";
+import Services from "../element/ButtonSerrvices";
+import { context } from "../context/ContextProvider";
 
 function TopMenuHeader() {
   const location = useLocation();
 
   const [selected, setSelected] = useState(headerMenu[0].id);
   const [openHamburgerMenu, setOpenHamburgerMenu] = useState(false);
+
+  const { service, setService } = useContext(context);
 
   const clickHandler = (id) => {
     setSelected(id);
@@ -53,7 +57,24 @@ function TopMenuHeader() {
                   {item.title}
                 </li>
                 {item.title === "خدمات" && (
-                  <li className="text-[23px] cursor-pointer">{item.icon}</li>
+                  <div>
+                    <li
+                      onMouseEnter={() => setService(true)}
+                      className="text-[23px] relative cursor-pointer"
+                    >
+                      <div onMouseEnter={() => setService(true)}>
+                        {item.icon}
+                      </div>
+                    </li>
+                    {service && (
+                      <div
+                        onMouseLeave={() => setService(false)}
+                        className="absolute top-[3rem]"
+                      >
+                        <Services service={service} setService={setService} />
+                      </div>
+                    )}
+                  </div>
                 )}
               </Link>
             </ul>
